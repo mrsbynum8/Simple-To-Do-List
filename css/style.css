@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Poller+One");
+
+:root {
+  --main-color: #cc0000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+
+h1 {
+  font-family: "Poller One", cursive;
+  text-align: center;
+  background: var(--main-color);
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.fa-plus {
+  float: right;
+}
+
+#container {
+  box-shadow: 0 0 3px var(--main-color);
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+}
+
+.completed {
+  color: var(--main-color);
+  text-decoration: line-through;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: white;
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+
+li span {
+  background: var(--main-color);
+  height: 40px;
+  text-align: center;
+  margin-right: 20px;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.3s linear;
+  opacity: 0;
+}
+
+input {
+  font-size: 18px;
+  background: #f7f7f7;
+  border: 3px solid rgba(0,0,0,0);
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  color: var(--main-color);
+  box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+}
+
+input:focus {
+  background: white;
+  border: 3px solid var(--main-color);
+  outline: none;
+}
